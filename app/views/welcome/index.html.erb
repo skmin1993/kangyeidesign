@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Delicious Bootstrap Template - Index</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <title>KangYei Design & Advertising</title>
+  <meta content="We customize and design the printing service for you. " name="description">
+  <meta content="Printing Design, Company Chop, Packaging, Menu, Book, Flyer, Brochure" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -48,27 +48,29 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="#hero">KANGYEI</a></h1>
+        <h1 class="text-light"><a href="#hero"><img src="/assets/logo-1-36fe68a6548204f19c3a44915ccb6e96f3c422cad98604d62443e8487f225ab7.png" class="img-fluid" style="height:70px;" alt=""></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="active"><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><%= link_to "Home", welcome_index_path%></li>
+        <li><%= link_to "About", about_index_path%></li>
         <li><a href="#services">Services</a></li>
         <li class="drop-down"><a class="#portfolio">Product</a>
           <ul>
             <li><%= link_to "Box Packaging", packaging_product_index_path%></li>
             <li><%= link_to "Menu & Book", menu_book_product_index_path%></li>
+            <li><%= link_to "Flyer", company_product_index_path%></li>
+            <li><%= link_to "Company Folder", company_product_index_path%></li>
+            <li><%= link_to "Company Chop", company_product_index_path%></li>
+            <li><%= link_to "Annual Report", company_product_index_path%></li>
+            <li><%= link_to "Booklet", company_product_index_path%></li>
           </ul>
-        </li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><%= link_to "Contact", contact_us_path%></li>
       </ul>
     </nav><!-- .nav-menu -->
   </div>
-
 
   </header><!-- End Header -->
 
@@ -82,10 +84,10 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style=" background: linear-gradient( rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),  url(/assets/fontpage-d6f93965d9c77a4940570c60bdc0f499a829a679f5c1de7005dd51b05eebf320.jpg) center no-repeat; background-size: cover; " >
+          <div class="carousel-item active" style=" background: linear-gradient( rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%),  url(/assets/c12000m-840f4dcb17096fbd681d1eb20040329df803b5938b4bda87efb95651f1b78e95.jpg) center no-repeat; background-size: cover; " >
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">SANITIZER LABEL & BOX PACKAGING PRINTING</h2>
+                <h2 class="animate__animated animate__fadeInDown">PRODUCT LABELLING & BOX PACKAGING PRINTING</h2>
                 <h3 class="animate__animated animate__fadeInUp">MANUFACTURER PRICE </h3>
                 <h4 class="animate__animated animate__fadeInUp">FAST & LOWEST PRICE</h4>
                 <div>
@@ -94,13 +96,12 @@
               </div>
             </div>
           </div>
+
           <!-- Slide 2 -->
-          <div class="carousel-item" style=" background: linear-gradient( rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),  url(/assets/menu4-5e1a32c717fe70e90306b101abef7d6448d0dc884959d30c69c2137a0d7e23d6.png) right no-repeat; background-size: cover; " >
-
-
+          <div class="carousel-item" style=" background: linear-gradient( rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),  url(/assets/fontpage2-b37643b1aa2f3da6dbf93d25ce5590907d44f9f5fc72029276cb1ceed60b9e8a.png) right no-repeat; background-size: cover; " >
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">MENU, BOOK & MAGAZINE</h2>
+                <h2 class="animate__animated animate__fadeInDown">BOX PACKAGING</h2>
                 <h3 class="animate__animated animate__fadeInUp">MANUFACTURER PRICE </h3>
                 <h4 class="animate__animated animate__fadeInUp">FAST & LOWEST PRICE</h4>
                 <div>
@@ -109,7 +110,9 @@
               </div>
             </div>
           </div>
-        </div>
+
+      </div>
+
 
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon fa fa-arrow-left" aria-hidden="true"></span>
@@ -127,13 +130,22 @@
 
   <main id="main">
 
+    <section id="promotion" class="promotion section-bg">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Promotion</h2>
+          <img src="/assets/promotion-report-f73348228c8b577baf061c0b1ce8757666877158d97779034930f2c5edd0391a.jpg" class="img-fluid" ></a></h1>
+        </div>
+      </div>
+    </section>
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
 
         <div class="row">
           <div class="col-xl-6 col-lg-7" data-aos="fade-right">
-            <img src="/assets/9grid-c3edbcbe275f57a1f88459525fd11f6c4294e37f9f772117addc2af8b7b5e6e9.png" class="img-fluid" alt="">
+            <img src="/assets/9grid-9563b6fee82ef4b589beeff8e88a8feb683afef2a87ae31bf6bdf614257fe426.png" class="img-fluid" alt="">
           </div>
           <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
             <h3 data-aos="fade-up">WELCOME</h3>
@@ -230,19 +242,20 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
+          <h2>Product</h2>
           <p></p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Packaging</li>
-              <li data-filter=".filter-web">Menu & Book</li>
+              <li><%= link_to "Box Packaging", packaging_product_index_path%></li>
+              <li><%= link_to "Menu, Book & Magazine", menu_book_product_index_path%></li>
+              <li><%= link_to "Company Document", company_product_index_path%></li>
             </ul>
           </div>
         </div>
+
 
         <div class="row portfolio-container" data-aos="fade-up">
 
@@ -254,7 +267,7 @@
                 <p>Packaging</p>
                 <div class="portfolio-links">
                   <a href="/assets/packaging1-ebfad0c47599d586af5966bf82633a47a456920a8b3a77408740f454314ad6bb.png " data-gall="portfolioGallery" class="venobox" title="Durian Box 1"><i class="fa fa-plus"></i></a>
-                  <a href="http://wa.me/60162051399?text=Hi, I wish to get quotation for your box packaging." target="_blank"><i class="fa fa-phone"></i></a>
+                  <a title="More Details"><%= link_to "", packaging_product_index_path, class: "fa fa-link"%></a>
                 </div>
               </div>
             </div>
@@ -268,7 +281,7 @@
                 <p>Menu & Book</p>
                 <div class="portfolio-links">
                   <a href="/assets/menulist2-483b0c8cceee323736981d284337ed8e7dda48614c312bcdb78d1707b1cb169f.png" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="fa fa-plus"></i></a>
-                  <a href="portfolio.html" title="More Details"><i class="fa fa-link"></i></a>
+                  <a title="More Details"><%= link_to "", menu_book_product_index_path, class: "fa fa-link"%></a>
                 </div>
               </div>
             </div>
@@ -276,13 +289,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="/assets/packaging7-6198160739cf546365334139845be57b26656b6d2b000910e15c32e6e6e20ff2.png" class="img-fluid" alt="">
+              <img src="/assets/magazine1-41eae61b5a2fd52492c9d45dd77e24eca6979768937ca7aab2b6e836b91a1070.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product Box</h4>
-                <p>Packaging</p>
+                <h4>Magazine</h4>
+                <p>Menu & Magazine</p>
                 <div class="portfolio-links">
-                  <a href="/assets/packaging7-6198160739cf546365334139845be57b26656b6d2b000910e15c32e6e6e20ff2.png" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", packaging_product_index_path,  class:"fa fa-link"%></a>
+                  <a href="/assets/magazine1-41eae61b5a2fd52492c9d45dd77e24eca6979768937ca7aab2b6e836b91a1070.png" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="fa fa-plus"></i></a>
+                  <a title="More Details"><%= link_to "", menu_book_product_index_path, class: "fa fa-link"%></a>
                 </div>
               </div>
             </div>
@@ -291,13 +304,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="/assets/menulist3-03930599f7f6d60842ce8a267f7e4ee6e47cd1892d0da5d2c621ead3bb5613bd.png" class="img-fluid" alt="">
+              <img src="/assets/annualreport-4473d95f1b9914c0d1f59d7802a097cdfd3d39f9a784e96b2203852b9efdfc4f.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Food Menu</h4>
-                <p>Menu & Book</p>
+                <h4>Annual Report</h4>
+                <p>Company Document</p>
                 <div class="portfolio-links">
-                  <a href="/assets/menulist3-03930599f7f6d60842ce8a267f7e4ee6e47cd1892d0da5d2c621ead3bb5613bd.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                  <a href="portfolio.html" title="More Details"><i class="fa fa-link"></i></a>
+                  <a href="/assets/annualreport-4473d95f1b9914c0d1f59d7802a097cdfd3d39f9a784e96b2203852b9efdfc4f.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
+                  <a title="More Details"><%= link_to "", company_product_index_path, class: "fa fa-link"%></a>
                 </div>
               </div>
             </div>
@@ -305,13 +318,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="/assets/packaging3-c9476da39313ae13699074866c96cb2bec4fe6f463c436de4027e4b713185f20.png" class="img-fluid" alt="">
+              <img src="/assets/banner1-733983e32bd00741794927666a889627537780453ea9afd2157b70782bd655d5.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Food Box</h4>
-                <p>Packaging</p>
+                <h4>Banner</h4>
+                <p>Company Document</p>
                 <div class="portfolio-links">
-                  <a href="/assets/packaging3-c9476da39313ae13699074866c96cb2bec4fe6f463c436de4027e4b713185f20.png" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", packaging_product_index_path,  class:"fa fa-link"%></a>
+                  <a href="/assets/banner1-733983e32bd00741794927666a889627537780453ea9afd2157b70782bd655d5.png" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-plus"></i></a>
+                  <a title="More Details"><%= link_to "", company_product_index_path, class: "fa fa-link"%></a>
                 </div>
               </div>
             </div>
@@ -325,11 +338,69 @@
                 <p>Menu & Book</p>
                 <div class="portfolio-links">
                   <a href="/assets/menulist1-f528df3f9520f690a42da7431422f621a13041bdbb6eddc6309c92613ded1a55.png " data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
+                  <a title="More Details"><%= link_to "", menu_book_product_index_path, class: "fa fa-link"%></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src=" /assets/flyer-fa4f76611107b1d077a108f7647bafc76584a17522e93ef300d48db52d698cb4.png " class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Flyer</h4>
+                <p>Company Document</p>
+                <div class="portfolio-links">
+                  <a href=" /assets/flyer-fa4f76611107b1d077a108f7647bafc76584a17522e93ef300d48db52d698cb4.png " data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
+                  <a title="More Details"><%= link_to "", company_product_index_path, class: "fa fa-link"%></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="/assets/company-folder-3131f557bea77c005779423d2dc86c6a596d35c95d9f082739cd3d2c5f3da3d0.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Company Folder</h4>
+                <p>Company Document</p>
+                <div class="portfolio-links">
+                  <a href="/assets/company-folder-3131f557bea77c005779423d2dc86c6a596d35c95d9f082739cd3d2c5f3da3d0.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
+                  <a title="More Details"><%= link_to "", company_product_index_path, class: "fa fa-link"%></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="/assets/namecard-ea403a87100124f376b92bf4b5a0ee6ef3af65ddf9c6a5f2ad35aa1ee204d5b7.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Name Card</h4>
+                <p>Company Document</p>
+                <div class="portfolio-links">
+                  <a href="/assets/namecard-ea403a87100124f376b92bf4b5a0ee6ef3af65ddf9c6a5f2ad35aa1ee204d5b7.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
                   <a href="portfolio.html" title="More Details"><i class="fa fa-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="/assets/companychop-e85cc39202369e5365f161b757bc70011224bb5808693e2d7dc2d75e5908518f.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Company Chop</h4>
+                <p>Company Document</p>
+                <div class="portfolio-links">
+                  <a href="/assets/companychop-e85cc39202369e5365f161b757bc70011224bb5808693e2d7dc2d75e5908518f.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
+                  <a href="portfolio.html" title="More Details"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
 
@@ -413,25 +484,32 @@
             <h4>Useful Links</h4>
             <ul>
               <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Home", welcome_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "About", welcome_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Contact", welcome_index_path%></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Menu, Book & Magazine", menu_book_product_index_path%></li>
               <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Box Packaging",  packaging_product_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Menu", menu_book_product_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Book", menu_book_product_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Magazine", menu_book_product_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Company Folder", menu_book_product_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Flyer", menu_book_product_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Company Chop", menu_book_product_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Annual Report", menu_book_product_index_path%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Booklet", menu_book_product_index_path%></li>
             </ul>
           </div>
-
-
         </div>
       </div>
     </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>KANG YEI DESIGN & ADVERTISING</span></strong>. All Rights Reserved
+        &copy;  Copyright  2020   <strong><span>KANG YEI DESIGN & ADVERTISING</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
