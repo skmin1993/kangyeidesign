@@ -53,6 +53,16 @@
     }
   });
 
+  // Reload page to fix mobile navigation error
+    $(document).ready(function() {
+    $('.my-link').click(function() {
+        setTimeout(function(){
+                   window.location.reload(true); },
+             50);
+          });
+
+    });
+
   // Mobile Navigation
   if ($('.nav-menu').length) {
     var $mobile_nav = $('.nav-menu').clone().prop({
