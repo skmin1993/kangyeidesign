@@ -7,6 +7,12 @@
 !(function($) {
   "use strict";
 
+
+$(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+  
+
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
@@ -120,6 +126,25 @@
       }
     });
   });
+
+     // Header fixed and Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-facebook').fadeIn('slow');
+      $('#header').addClass('header-fixed');
+    } else {
+      $('.back-to-facebook').fadeOut('slow');
+      $('#header').removeClass('header-fixed');
+    }
+  });
+
+  $('.back-to-faceebook').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
 
    // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {

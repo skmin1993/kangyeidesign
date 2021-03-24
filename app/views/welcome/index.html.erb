@@ -48,24 +48,25 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a><img src="/assets/logo-1-36fe68a6548204f19c3a44915ccb6e96f3c422cad98604d62443e8487f225ab7.png" class="img-fluid" style="height:70px;" alt=""></a></h1>
+        <h1 class="text-light logo zoom"><a class="my-link" href="/welcome/index"><img src="/assets/logo-2-4b620c95323aeaeb4711ee81d533fc4e4d33b10f89dbb20f78dfe3c083902022.png" class="img-fluid" style="height:70px;" alt=""></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="my-link"><%= link_to "Home", welcome_index_path%></li>
+        <li class="my-link" style="font-family: Helvetica, Sans-Serif;"><%= link_to "Home", welcome_index_path%></li>
         <li class="my-link"><%= link_to "About", about_index_path%></li>
         <li><a href="#services">Services</a></li>
         <li class="drop-down"><a class="#portfolio">Product</a>
           <ul>
-            <li class="my-link"><%= link_to "Box Packaging", packaging_product_index_path%></li>
-            <li class="my-link"><%= link_to "Menu & Book", menu_book_product_index_path%></li>
-            <li class="my-link"><%= link_to "Flyer", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Company Folder", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Company Chop", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Annual Report", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Booklet", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "BUSINESS CARD", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "STICKERS", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "PACKAGINGS", packaging_product_index_path%></li>
+            <li class="my-link"><%= link_to "BOOKLETS", packaging_product_index_path%></li>
+            <li class="my-link"><%= link_to "FLYERS & LEAFLETS", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "CORPORATES", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "STATIONARIES", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "OFFSET PRINTING ", company_product_index_path%></li>
           </ul>
         <li class="my-link"><%= link_to "Contact", contact_us_path%></li>
       </ul>
@@ -143,47 +144,106 @@
     <section id="about" class="about">
       <div class="container">
 
-        <div class="row">
-          <div class="col-xl-6 col-lg-7" data-aos="fade-right">
-            <img src="/assets/9grid-9563b6fee82ef4b589beeff8e88a8feb683afef2a87ae31bf6bdf614257fe426.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">WELCOME</h3>
+        <div class="row section-title">
+          <div class="col-xl-12 col-lg-12 pt-5 pt-lg-0 ">
+            <h3 data-aos="fade-up">HELLO</h3>
             <p data-aos="fade-up">
              We are trusted design and printing service provider in Kepong Malaysia. 
             </p>
+          </div>
+          <div class="col-xl-3 col-lg-3 pt-5 pt-lg-0">
             <div class="icon-box" data-aos="fade-up">
               <i class="fa fa-tint"></i>
               <h4>Product Ink</h4>
               <p>Soy / Vegetable Based Inks</p>
             </div>
-
+          </div>
+          <div class="col-xl-3 col-lg-3 pt-5 pt-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <i class="fa fa-recycle"></i>
               <h4>Product paper</h4>
               <p>Recycled Paper stocks</p>
             </div>
-
+          </div>
+          <div class="col-xl-3 col-lg-3 pt-5 pt-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <i class="fa fa-tree"></i>
               <h4>Sustainable Green Print</h4>
               <p>Unique combination of quality and environmental responsibility.</p>
             </div>
-
+          </div>
+          <div class="col-xl-3 col-lg-3 pt-5 pt-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <i class="fa fa-heart-o"></i>
               <h4>Our Services </h4>
               <p> Passionate Service</div>
               </p>
             </div>
+          </div>
+          </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
 
+   <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="" data-aos="fade-up">
+          <h2> FEATURED PRODUCTS</h2>
+          <p></p>
+        </div>
+        <div class=" row container text-center text-md-left " data-aos="fade-up" >
+        <div class = "row text-center" style="">
+          <div class="col-xs-6 text-center" style="background-color:none; margin-top:10px; margin-left:10px;">
+              <div class='product-holder inner'>
+                 <a class="my-link" href="/product/menu_book">
+                  <img src="/assets/book_print-1b50ab1464219e3cbb59c619dcf6245717ae68e5adf13f90785aeeb651869067.png" width="250" height="500" class='product-image'>
+                  <img src="/assets/book-a651e8a4a7e54f23943eae83c7a04271d38c0b25a846e1f55e4781c9b0a8e9b5.png"  width="400" height="100" class=' plus-book'>
+                </a>
+              </div>
+          </div>
+          <div class="col-xs-6 text-center" style="background-color:none; margin-top:10px; margin-left:10px;" >
+              <div class='product-holder inner'>
+                <a class="my-link"  href="/product/company">
+                  <img src="/assets/sticker-0a9b16db723c05af163d1eb9414407e0748d652269133f9a8a6a0649bb10e0ed.png" width="250" height="300" class='product-image'>
+                  <img src="/assets/foil_sticker-2379f15fe042f5ca687d96e976cde5f55394c4faea6c847299d70552df60d8e9.png"  width="100" height="100" class='plus-sticker1'>
+                  <img src="/assets/transparent_sticker-f0c2b0747f2bdd19c46beb525be129973596593b17856ecfa1ad4c6e5e0301e5.png"   width="180" height="140" class='plus-sticker2'>
+                </a>
+              </div>
+          </div>
+          <div class="col-xs-6 text-center" style="background-color:none; margin-top:10px; margin-left:10px; ">
+              <div class='product-holder inner'>
+                <a class="my-link"  href="/product/company">
+                  <img src="/assets/corporate-990a29931b166b0aa22f42d190b61cc3424aaf9f693476cb812892642cd2c03c.png" width="580" height="150" class='product-image'>
+                  <img src="/assets/corporate_folder-6d89a59bf2b1941a020d379bb0599f102deb45a25408bab82a0185f5a0e34271.png"  width="240" height="190" class='plus-folder'> 
+                  <img src="/assets/corporate_voucher-8fa6dce179619a9c693a93b5e3a1a5db88a4d4ca46a79835f85b25824c882afa.png"  width="250" height="180" class='plus-voucher'>
+                  
+                </a>
+              </div>
+              <div class='product-holder inner' style="margin-top:10px; margin-right:280px;">
+                <a class="my-link" href="/product/company">
+                  <img src="/assets/card-89770bbac6296d9bb50fd2d91a84f5fec133c6bd371193b4aebedfdd3a527a9c.png" width="300" height="150" class='product-image'>
+                  <img src="/assets/card-98d5250c9684033d1f7913b946e2422806edda0efc9c201004e801f78ec16d92.png"  width="280" height="130" class='plus-card'>
+                </a>
+              </div>
+               <div class='product-holder inner' style="margin-top:10px; ">
+                <a class="my-link" href="/product/packaging">
+                  <img src="/assets/packaging-4d75b186fa05c67fd1dcf0bdb3ad47afc2b5592d0b46b7cf06b3cf5344cedf82.png" width="580" height="240" class='product-image'>
+                  <img src="/assets/box1-7ce3abe29181bc64ba43a78c312278dd4d5981856784ea3f822be00491ecebc1.png" width="350" style="margin-bottom:500px;" height="300" class='plus-packaging'>
+                </a>
+              </div>
+              <br><br><br>
+          </div>
+      </div>
+
+    
+      </div>
+    </section><!-- End Portfolio Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <section id="services" class="services">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -237,177 +297,6 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio ">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Product</h2>
-          <p></p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li><%= link_to "Box Packaging", packaging_product_index_path%></li>
-              <li><%= link_to "Menu, Book & Magazine", menu_book_product_index_path%></li>
-              <li><%= link_to "Company Document", company_product_index_path%></li>
-            </ul>
-          </div>
-        </div>
-
-
-        <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/assets/packaging1-ebfad0c47599d586af5966bf82633a47a456920a8b3a77408740f454314ad6bb.png " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Food Box</h4>
-                <p>Packaging</p>
-                <div class="portfolio-links">
-                  <a href="/assets/packaging1-ebfad0c47599d586af5966bf82633a47a456920a8b3a77408740f454314ad6bb.png " data-gall="portfolioGallery" class="venobox" title="Durian Box 1"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", packaging_product_index_path, class: "fa fa-link"%></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="/assets/menulist2-483b0c8cceee323736981d284337ed8e7dda48614c312bcdb78d1707b1cb169f.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Book</h4>
-                <p>Menu & Book</p>
-                <div class="portfolio-links">
-                  <a href="/assets/menulist2-483b0c8cceee323736981d284337ed8e7dda48614c312bcdb78d1707b1cb169f.png" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", menu_book_product_index_path, class: "fa fa-link"%></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/assets/magazine1-41eae61b5a2fd52492c9d45dd77e24eca6979768937ca7aab2b6e836b91a1070.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Magazine</h4>
-                <p>Menu & Magazine</p>
-                <div class="portfolio-links">
-                  <a href="/assets/magazine1-41eae61b5a2fd52492c9d45dd77e24eca6979768937ca7aab2b6e836b91a1070.png" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", menu_book_product_index_path, class: "fa fa-link"%></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="/assets/annualreport-4473d95f1b9914c0d1f59d7802a097cdfd3d39f9a784e96b2203852b9efdfc4f.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Annual Report</h4>
-                <p>Company Document</p>
-                <div class="portfolio-links">
-                  <a href="/assets/annualreport-4473d95f1b9914c0d1f59d7802a097cdfd3d39f9a784e96b2203852b9efdfc4f.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", company_product_index_path, class: "fa fa-link"%></a>
-                </div>
-              </div>
-            </div>
-          </div>          
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="/assets/banner1-733983e32bd00741794927666a889627537780453ea9afd2157b70782bd655d5.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Banner</h4>
-                <p>Company Document</p>
-                <div class="portfolio-links">
-                  <a href="/assets/banner1-733983e32bd00741794927666a889627537780453ea9afd2157b70782bd655d5.png" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", company_product_index_path, class: "fa fa-link"%></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="/assets/menulist1-f528df3f9520f690a42da7431422f621a13041bdbb6eddc6309c92613ded1a55.png " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Food Menu</h4>
-                <p>Menu & Book</p>
-                <div class="portfolio-links">
-                  <a href="/assets/menulist1-f528df3f9520f690a42da7431422f621a13041bdbb6eddc6309c92613ded1a55.png " data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", menu_book_product_index_path, class: "fa fa-link"%></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src=" /assets/flyer-fa4f76611107b1d077a108f7647bafc76584a17522e93ef300d48db52d698cb4.png " class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Flyer</h4>
-                <p>Company Document</p>
-                <div class="portfolio-links">
-                  <a href=" /assets/flyer-fa4f76611107b1d077a108f7647bafc76584a17522e93ef300d48db52d698cb4.png " data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", company_product_index_path, class: "fa fa-link"%></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="/assets/company-folder-3131f557bea77c005779423d2dc86c6a596d35c95d9f082739cd3d2c5f3da3d0.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Company Folder</h4>
-                <p>Company Document</p>
-                <div class="portfolio-links">
-                  <a href="/assets/company-folder-3131f557bea77c005779423d2dc86c6a596d35c95d9f082739cd3d2c5f3da3d0.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                  <a title="More Details"><%= link_to "", company_product_index_path, class: "fa fa-link"%></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="/assets/namecard-ea403a87100124f376b92bf4b5a0ee6ef3af65ddf9c6a5f2ad35aa1ee204d5b7.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Name Card</h4>
-                <p>Company Document</p>
-                <div class="portfolio-links">
-                  <a href="/assets/namecard-ea403a87100124f376b92bf4b5a0ee6ef3af65ddf9c6a5f2ad35aa1ee204d5b7.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                  <a href="portfolio.html" title="More Details"><i class="fa fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="/assets/companychop-e85cc39202369e5365f161b757bc70011224bb5808693e2d7dc2d75e5908518f.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Company Chop</h4>
-                <p>Company Document</p>
-                <div class="portfolio-links">
-                  <a href="/assets/companychop-e85cc39202369e5365f161b757bc70011224bb5808693e2d7dc2d75e5908518f.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="fa fa-plus"></i></a>
-                  <a href="portfolio.html" title="More Details"><i class="fa fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container">
@@ -454,6 +343,8 @@
 
   </main><!-- End #main -->
 
+
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -473,8 +364,9 @@
                 <strong>Email:</strong> kangyeidesign@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="http://wa.me/60162051399?text=Hi, I have intention to contact you." target="_blank"><i class="fa fa-phone"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="tel:60162051399" ><i class="fa fa-phone"></i></a>
+                 <a href="http://wa.me/60162051399?text=Hi, I have intention to contact you." target="_blank" class="whatapps"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/KangYei-Design-100160645238470" target="_blank"  class="facebook"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               </div>
             </div>
@@ -490,23 +382,59 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Our Products</h4>
             <ul>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Box Packaging",  packaging_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Menu", menu_book_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Book", menu_book_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Magazine", menu_book_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Company Folder", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Flyer", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Company Chop", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Annual Report", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Booklet", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "BUSINESS CARD",  company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "STICKERS", menu_book_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "PACKAGINGS", menu_book_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "BOOKLETS", menu_book_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "FLYERS & LEAFLETS", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "CORPORATES", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "STATIONARIES", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "OFFSET PRINTING", company_product_index_path, class: "my-link"%></li>
             </ul>
           </div>
+
+    <div class="col-lg-3 col-md-6 footer-links">
+        <h3 style="color:grey;">ASK US</h3>
+        <h5 style="font-weight: 100;">Get the answers to your questions today!</h5>
+          <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+          action="https://script.google.com/macros/s/AKfycbxdes1XOG1aXxK3IuC59okF5SE_19sgrS4S61iHIg/exec">
+            <!-- change the form action to your script url -->
+
+            <div class="form-elements form-row align-items-center">
+              <fieldset class="pure-group">
+                <label class="sr-only" for="email">Email</label>
+                <input type="email" class="form-control mb-2" id="email" placeholder="Enter Your Email" name="email" required>
+                <span class="email-invalid" style="display:none">
+                  Must be a valid email address</span>
+                  
+                <label class="sr-only" for="message">Message: </label>
+                <textarea type="message" class="form-control mb-2" id="message" placeholder="Write To Us..... " name="message" required></textarea>  
+              </fieldset>
+
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div>
+            </div>
+
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div class="thankyou_message" style="display:none;">
+              <h4><em>Thanks</em> for contacting us!<br>
+                We will get back to you soon!</h4>
+            </div>
+
+          </form>
+        </div>
+
         </div>
       </div>
     </div>
 
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+<!-- END -->
     <div class="container">
       <div class="copyright">
         &copy;  Copyright  2020   <strong><span>KANG YEI DESIGN & ADVERTISING</span></strong>. All Rights Reserved
@@ -521,12 +449,17 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-angle-down"></i></a>
+
+   <a href="https://wa.link/4b5i7a"class="back-to-facebook"><img src="/assets/whatapps-e4195645ad2663b61cabc73757cc178e34e5884fb6022a5bd1b936945b18aeb7.png" width="55"></a>
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
 
   <!-- Vendor JS Files -->
   <%= javascript_include_tag "jquery.min.js"%>
   <%= javascript_include_tag "bootstrap.bundle.min.js"%>
   <%= javascript_include_tag "jquery.easing.min.js"%>
+  <%= javascript_include_tag "form-submission-handler.js"%>
   <%= javascript_include_tag "validate.js"%>
   <%= javascript_include_tag "isotope.pkgd.min.js"%>
   <%= javascript_include_tag "venobox.min.js"%>

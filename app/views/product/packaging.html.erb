@@ -49,7 +49,7 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a><img src="/assets/logo-1-36fe68a6548204f19c3a44915ccb6e96f3c422cad98604d62443e8487f225ab7.png" class="img-fluid" style="height:70px;" alt=""></a></h1>
+        <h1 class="text-light logo zoom"><a class="my-link" href="/welcome/index"><img src="/assets/logo-2-4b620c95323aeaeb4711ee81d533fc4e4d33b10f89dbb20f78dfe3c083902022.png" class="img-fluid" style="height:70px;" alt=""></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -76,12 +76,20 @@
 
 
 
+
    <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center" style=" background: linear-gradient( rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%),  url(/assets/fontpackaging-b20c5fc8e9c93a312c959ceb795f06a0af919cd16be95ac0db424a3c7ed9b120.png
-)  no-repeat; background-size: cover; " >
-    <div class="container text-center text-md-left" data-aos="fade-up" >
-      <h1>Box Packaging</h1>
-      <h2>We design and build for your product box.</h2>
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center"  style=" background: linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),  url(/assets/artboard-8c8695ccd935697a3553b72143eca974c40d2e318615c34e2390c06a49b2a137.png
+)  center no-repeat; background-size: cover;  " >
+    <div class=" row container text-center text-md-left " data-aos="fade-up" >
+      <div class="col-6">
+      <img src="/assets/box1-7ce3abe29181bc64ba43a78c312278dd4d5981856784ea3f822be00491ecebc1.png" class="img-fluid" width="600" alt="Responsive image">
+    </div>
+    <div class="col-6" style="padding: 10px; margin: auto; width: 60%;">
+      <h1>Box <br> Packaging</h1>
+      <h3 style="font-weight: 500; font-weight: bold;">Product Packaging Is a Marketing Tool</h3>
+      <h3 class="smaller" style="font-weight: 100; ">Here at Kang Yei Design, we specialize in producing custom packaging that fits your brand’s needs
+to help attract the right audiences.</h3>  
+    </div>
     </div>
   </section><!-- End Hero -->
 
@@ -114,6 +122,7 @@
                 </div>
               </div>
             </div>
+            <h4>Food Box</h4>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
@@ -327,8 +336,9 @@
                 <strong>Email:</strong> kangyeidesign@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="http://wa.me/60162051399?text=Hi, I have intention to contact you." target="_blank"><i class="fa fa-phone"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="tel:60162051399" ><i class="fa fa-phone"></i></a>
+                 <a href="http://wa.me/60162051399?text=Hi, I have intention to contact you." target="_blank" class="whatapps"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/KangYei-Design-100160645238470" target="_blank"  class="facebook"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               </div>
             </div>
@@ -344,23 +354,59 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Our Products</h4>
             <ul>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Box Packaging",  packaging_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Menu", menu_book_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Book", menu_book_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Magazine", menu_book_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Company Folder", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Flyer", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Company Chop", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Annual Report", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Booklet", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "BUSINESS CARD",  company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "STICKERS", menu_book_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "PACKAGINGS", menu_book_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "BOOKLETS", menu_book_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "FLYERS & LEAFLETS", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "CORPORATES", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "STATIONARIES", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "OFFSET PRINTING", company_product_index_path, class: "my-link"%></li>
             </ul>
           </div>
+
+    <div class="col-lg-3 col-md-6 footer-links">
+        <h3 style="color:grey;">ASK US</h3>
+        <h5 style="font-weight: 100;">Get the answers to your questions today!</h5>
+          <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+          action="https://script.google.com/macros/s/AKfycbxdes1XOG1aXxK3IuC59okF5SE_19sgrS4S61iHIg/exec">
+            <!-- change the form action to your script url -->
+
+            <div class="form-elements form-row align-items-center">
+              <fieldset class="pure-group">
+                <label class="sr-only" for="email">Email</label>
+                <input type="email" class="form-control mb-2" id="email" placeholder="Enter Your Email" name="email" required>
+                <span class="email-invalid" style="display:none">
+                  Must be a valid email address</span>
+                  
+                <label class="sr-only" for="message">Message: </label>
+                <textarea type="message" class="form-control mb-2" id="message" placeholder="Write To Us..... " name="message" required></textarea>  
+              </fieldset>
+
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div>
+            </div>
+
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div class="thankyou_message" style="display:none;">
+              <h4><em>Thanks</em> for contacting us!<br>
+                We will get back to you soon!</h4>
+            </div>
+
+          </form>
+        </div>
+
         </div>
       </div>
     </div>
 
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+<!-- END -->
     <div class="container">
       <div class="copyright">
         &copy;  Copyright  2020   <strong><span>KANG YEI DESIGN & ADVERTISING</span></strong>. All Rights Reserved
@@ -375,19 +421,24 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-angle-down"></i></a>
+
+   <a href="https://wa.link/4b5i7a"class="back-to-facebook"><img src="/assets/whatapps-e4195645ad2663b61cabc73757cc178e34e5884fb6022a5bd1b936945b18aeb7.png" width="55"></a>
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
 
-      <!-- Vendor JS Files -->
+
+  <!-- Vendor JS Files -->
   <%= javascript_include_tag "jquery.min.js"%>
   <%= javascript_include_tag "bootstrap.bundle.min.js"%>
   <%= javascript_include_tag "jquery.easing.min.js"%>
+  <%= javascript_include_tag "form-submission-handler.js"%>
   <%= javascript_include_tag "validate.js"%>
   <%= javascript_include_tag "isotope.pkgd.min.js"%>
   <%= javascript_include_tag "venobox.min.js"%>
   <%= javascript_include_tag "owl.carousel.min.js"%>
   <%= javascript_include_tag "aos.js"%>
   <%= javascript_include_tag "main.js"%>
+
 
 </body>
 

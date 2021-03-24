@@ -48,7 +48,7 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a><img src="/assets/logo-1-36fe68a6548204f19c3a44915ccb6e96f3c422cad98604d62443e8487f225ab7.png" class="img-fluid" style="height:70px;" alt=""></a></h1>
+        <h1 class="text-light logo zoom"><a class="my-link" href="/welcome/index"><img src="/assets/logo-2-4b620c95323aeaeb4711ee81d533fc4e4d33b10f89dbb20f78dfe3c083902022.png" class="img-fluid" style="height:70px;" alt=""></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -222,8 +222,9 @@
                 <strong>Email:</strong> kangyeidesign@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="http://wa.me/60162051399?text=Hi, I have intention to contact you." target="_blank"><i class="fa fa-phone"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="tel:60162051399" ><i class="fa fa-phone"></i></a>
+                 <a href="http://wa.me/60162051399?text=Hi, I have intention to contact you." target="_blank" class="whatapps"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/KangYei-Design-100160645238470" target="_blank"  class="facebook"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               </div>
             </div>
@@ -239,23 +240,59 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Our Products</h4>
             <ul>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Box Packaging",  packaging_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Menu", menu_book_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Book", menu_book_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Magazine", menu_book_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Company Folder", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Flyer", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Company Chop", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Annual Report", company_product_index_path, class: "my-link"%></li>
-              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "Booklet", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "BUSINESS CARD",  company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "STICKERS", menu_book_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "PACKAGINGS", menu_book_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "BOOKLETS", menu_book_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "FLYERS & LEAFLETS", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "CORPORATES", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "STATIONARIES", company_product_index_path, class: "my-link"%></li>
+              <li title="More Details"><i class="fa fa-chevron-right"></i><%= link_to "OFFSET PRINTING", company_product_index_path, class: "my-link"%></li>
             </ul>
           </div>
+
+    <div class="col-lg-3 col-md-6 footer-links">
+        <h3 style="color:grey;">ASK US</h3>
+        <h5 style="font-weight: 100;">Get the answers to your questions today!</h5>
+          <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+          action="https://script.google.com/macros/s/AKfycbxdes1XOG1aXxK3IuC59okF5SE_19sgrS4S61iHIg/exec">
+            <!-- change the form action to your script url -->
+
+            <div class="form-elements form-row align-items-center">
+              <fieldset class="pure-group">
+                <label class="sr-only" for="email">Email</label>
+                <input type="email" class="form-control mb-2" id="email" placeholder="Enter Your Email" name="email" required>
+                <span class="email-invalid" style="display:none">
+                  Must be a valid email address</span>
+                  
+                <label class="sr-only" for="message">Message: </label>
+                <textarea type="message" class="form-control mb-2" id="message" placeholder="Write To Us..... " name="message" required></textarea>  
+              </fieldset>
+
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </div>
+            </div>
+
+            <!-- Customise the Thankyou Message People See when they submit the form: -->
+            <div class="thankyou_message" style="display:none;">
+              <h4><em>Thanks</em> for contacting us!<br>
+                We will get back to you soon!</h4>
+            </div>
+
+          </form>
+        </div>
+
         </div>
       </div>
     </div>
 
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="form-submission-handler.js"></script>
+<!-- END -->
     <div class="container">
       <div class="copyright">
         &copy;  Copyright  2020   <strong><span>KANG YEI DESIGN & ADVERTISING</span></strong>. All Rights Reserved
@@ -270,10 +307,17 @@
     </div>
   </footer><!-- End Footer -->
 
-      <!-- Vendor JS Files -->
+
+   <a href="https://wa.link/4b5i7a"class="back-to-facebook"><img src="/assets/whatapps-e4195645ad2663b61cabc73757cc178e34e5884fb6022a5bd1b936945b18aeb7.png" width="55"></a>
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+
+  <!-- Vendor JS Files -->
   <%= javascript_include_tag "jquery.min.js"%>
   <%= javascript_include_tag "bootstrap.bundle.min.js"%>
   <%= javascript_include_tag "jquery.easing.min.js"%>
+  <%= javascript_include_tag "form-submission-handler.js"%>
   <%= javascript_include_tag "validate.js"%>
   <%= javascript_include_tag "isotope.pkgd.min.js"%>
   <%= javascript_include_tag "venobox.min.js"%>
