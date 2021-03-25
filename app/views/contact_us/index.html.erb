@@ -48,23 +48,25 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="#hero"><img src="/assets/logo-2-4b620c95323aeaeb4711ee81d533fc4e4d33b10f89dbb20f78dfe3c083902022.png" class="img-fluid" style="height:70px;" alt=""></a></h1>
+        <h1 class="text-light logo zoom"><a class="my-link" href="/welcome/index"><img src="/assets/logo-2-4b620c95323aeaeb4711ee81d533fc4e4d33b10f89dbb20f78dfe3c083902022.png" class="img-fluid" style="height:70px;" alt=""></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="my-link"><%= link_to "Home", welcome_index_path%></li>
+        <li class="my-link" style="font-family: Helvetica, Sans-Serif;"><%= link_to "Home", welcome_index_path%></li>
         <li class="my-link"><%= link_to "About", about_index_path%></li>
-        <li class="drop-down"><a class="#portfolio">Product</a>
+        <li><a href="#services">Services</a></li>
+        <li class="drop-down "><a class="#portfolio">Product</a>
           <ul>
-            <li class="my-link"><%= link_to "Box Packaging", packaging_product_index_path%></li>
-            <li class="my-link"><%= link_to "Menu & Book", menu_book_product_index_path%></li>
-            <li class="my-link"><%= link_to "Flyer", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Company Folder", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Company Chop", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Annual Report", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Booklet", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "BUSINESS CARD", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "STICKERS", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "PACKAGINGS", packaging_product_index_path%></li>
+            <li class="my-link"><%= link_to "BOOKLETS", menu_book_product_index_path%></li>
+            <li class="my-link"><%= link_to "FLYERS & LEAFLETS", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "CORPORATES", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "STATIONARIES", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "OFFSET PRINTING ", company_product_index_path%></li>
           </ul>
         <li class="my-link"><%= link_to "Contact", contact_us_path%></li>
       </ul>
@@ -182,7 +184,7 @@
         <h3 style="color:grey;">ASK US</h3>
         <h5 style="font-weight: 100;">Get the answers to your questions today!</h5>
           <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
-          action="https://script.google.com/macros/s/AKfycbxdes1XOG1aXxK3IuC59okF5SE_19sgrS4S61iHIg/exec">
+          action="https://script.google.com/macros/s/AKfycbxHzWZX4Oi1EfMJ9b-TcA15QUlqXoZTEDkLPdxMQ-7VilV9GrGCaQR2lPnbSCcBHvSb/exec">
             <!-- change the form action to your script url -->
 
             <div class="form-elements form-row align-items-center">

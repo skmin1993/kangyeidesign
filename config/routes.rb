@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :contact_us, only: [:index] do
   end
 
-  resources :product, only: [:index] do
+  resources :product, only: [:abc] do
      collection do
       get :packaging
       get :menu_book
