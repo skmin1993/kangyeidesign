@@ -1061,6 +1061,10 @@ section {
   z-index: 9994;
 }
 
+.portfolio .align-left {
+  margin-left:-100px;
+}
+
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
   color: #fff;
@@ -1113,6 +1117,15 @@ section {
   bottom: 15px;
   right: 15px;
 }
+
+
+@media (max-width: 768px) {
+  .portfolio .align-left {
+    margin-left:-10px;
+  }
+
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
