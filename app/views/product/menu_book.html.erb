@@ -55,17 +55,19 @@
       </div>
     <nav class="nav-menu d-none d-lg-block">
       <ul>
-        <li class="my-link"><%= link_to "Home", welcome_index_path%></li>
+        <li class="my-link" style="font-family: Helvetica, Sans-Serif;"><%= link_to "Home", welcome_index_path%></li>
         <li class="my-link"><%= link_to "About", about_index_path%></li>
-        <li class="drop-down"><a class="#portfolio">Product</a>
+        <li><a href="#services">Services</a></li>
+        <li class="drop-down "><a class="#portfolio">Product</a>
           <ul>
-            <li class="my-link"><%= link_to "Box Packaging", packaging_product_index_path%></li>
-            <li class="my-link"><%= link_to "Menu & Book", menu_book_product_index_path%></li>
-            <li class="my-link"><%= link_to "Flyer", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Company Folder", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Company Chop", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Annual Report", company_product_index_path%></li>
-            <li class="my-link"><%= link_to "Booklet", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "BUSINESS CARD", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "STICKERS", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "PACKAGINGS", packaging_product_index_path%></li>
+            <li class="my-link"><%= link_to "BOOKLETS", menu_book_product_index_path%></li>
+            <li class="my-link"><%= link_to "FLYERS & LEAFLETS", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "CORPORATES", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "STATIONARIES", company_product_index_path%></li>
+            <li class="my-link"><%= link_to "OFFSET PRINTING ", company_product_index_path%></li>
           </ul>
         <li class="my-link"><%= link_to "Contact", contact_us_path%></li>
       </ul>
